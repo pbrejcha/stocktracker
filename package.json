@@ -15,12 +15,7 @@
     "method-override": "~2.3.0",
     "glob": "~4.3.1",
     "mongoose": "~3.8.20",
-    "jade": "~1.9.1",
-    "aurelia-bootstrapper": "^0.9.1",
-    "aurelia-dependency-injection": "^0.4.1",
-    "aurelia-framework": "^0.8.4",
-    "aurelia-http-client": "^0.4.3",
-    "aurelia-router": "^0.5.1"
+    "jade": "~1.9.1"
   },
   "devDependencies": {
     "gulp": "~3.8.10",
@@ -32,6 +27,13 @@
     "directories": {
       "lib": "public",
       "packages": "public/components"
+    },
+    "dependencies":{
+      "aurelia-bootstrapper": "^0.9.1",
+      "aurelia-dependency-injection": "^0.4.1",
+      "aurelia-framework": "^0.8.4",
+      "aurelia-http-client": "^0.4.3",
+      "aurelia-router": "^0.5.1"
     }
   }
 }
