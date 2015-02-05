@@ -3,32 +3,32 @@ var path = require('path'),
     env = process.env.NODE_ENV || 'development';
 
 var config = {
-  development: {
-    root: rootPath,
-    app: {
-      name: 'stocktracker'
+    development: {
+        root: rootPath,
+        app: {
+            name: 'stocktracker'
+        },
+        port: 3000,
+        db: 'mongodb://localhost/stocktracker-development'
     },
-    port: 3000,
-    db: 'mongodb://localhost/stocktracker-development'
-  },
 
-  test: {
-    root: rootPath,
-    app: {
-      name: 'stocktracker'
+    test: {
+        root: rootPath,
+        app: {
+            name: 'stocktracker'
+        },
+        port: 3000,
+        db: 'mongodb://localhost/stocktracker-test'
     },
-    port: 3000,
-    db: 'mongodb://localhost/stocktracker-test'
-  },
 
-  production: {
-    root: rootPath,
-    app: {
-      name: 'stocktracker'
-    },
-    port: 3000,
-    db: 'mongodb://localhost/stocktracker-production'
-  }
+    production: {
+        root: rootPath,
+        app: {
+            name: 'stocktracker'
+        },
+        port: 3000,
+        db: 'mongodb://localhost/stocktracker-production'
+    }
 };
 
 module.exports = config[env];
