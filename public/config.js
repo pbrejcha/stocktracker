@@ -3,8 +3,10 @@ System.config({
     "*": "*.js",
     "app/*": "public/*.js",
     "github:*": "/components/github/*.js",
-    "npm:*": "/components/npm/*.js"
-  }
+    "npm:*": "/components/npm/*.js",
+    "stocktracker/*": "public/*.js"
+  },
+  "transpiler": "6to5"
 });
 
 System.config({

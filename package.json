@@ -28,7 +28,8 @@
       "lib": "public",
       "packages": "public/components"
     },
-    "dependencies":{
+    "configFile": "public/config.js",
+    "dependencies": {
       "aurelia-bootstrapper": "^0.9.1",
       "aurelia-dependency-injection": "^0.4.1",
       "aurelia-framework": "^0.8.4",
