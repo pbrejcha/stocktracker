@@ -7,11 +7,10 @@ html(lang='en')
         block css
             link(rel='stylesheet', href='/css/style.css')
     body(aurelia-app)
-        block content
         block js
             script(src='http://localhost:35729/livereload.js')
             script(src='/components/system.js')
             script(src='config.js')
             script(type='text/javascript').
-                System.baseUrl = 'public';
+                System.baseUrl = '';
                 System.import('aurelia-bootstrapper').catch(console.error.bind(console));
